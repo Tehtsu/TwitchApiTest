@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TwitchController!{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center d-flex text-center">
+            <h1>
+                Jetzt live:
+            </h1>
+            <ul class="d-flex gap-2 justify-content-center py-5 list-group list-group-horizontal">
+                {% for streamer in liveStreamer %}
+                    <li>{{ streamer }}</li>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+    </div>
+{% endblock %}
