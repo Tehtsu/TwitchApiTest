@@ -34,7 +34,7 @@ class TwitchController extends AbstractController
      */
     public function checkStreamerStatus(TwitchApiService $twitchApiService): Response
     {
-        $streamerList = ['gronkhtv', 'tetzuttv', 'metashi12', 'sharuharts', 'tedwigtv', 'musclebrahtv'];
+        $streamerList = ['tetzuttv', 'gronkhtv', 'metashi12']; // Enter streamers whose live status is to be checked: ['tetzuttv', 'gronkhtv', 'metashi12']
         $liveStreamers = [];
 
         foreach ($streamerList as $streamer) {
